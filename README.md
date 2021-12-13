@@ -5,7 +5,7 @@ created by LTurret
 ## 目前進度
 
 https://zerojudge.tw/UserStatistic <br>
-AC: **19**/459
+AC: **21**/459
 
 ## 基礎題庫卡住的
 
