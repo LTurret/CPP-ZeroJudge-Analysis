@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <bitset>
 
 using namespace std;
 
@@ -16,12 +17,19 @@ vector<string> generator(int n) {
 }
 
 int main() {
-    vector<string> scope = {};
     int n;
     cin >> n;
-    scope = generator(n);
+    vector<string> coloms = generator(n);
 
-    for (auto& e : scope) cout << e;
+    // for (auto& e : coloms) cout << e;
+
+    vector<int> opp = {};
+    for (int i=0; i<n; i++) opp.insert(end(opp),n);
     
+    while(opp[0] != 0) {
+        opp[0] = opp[0] - 1;
+    }
+    for (auto& e : opp) cout << e;
+
     return 0;
 }
